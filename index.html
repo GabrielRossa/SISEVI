@@ -7,25 +7,32 @@
     <title>Sisevi - Login</title>
 
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+
 </head>
 <body>
     <section id="login" class="grid">
-        <section class="header">
-            <h2><a href="#">Escola Vivian Marçal</a></h2>
+        <section id="header">
+            <p><a href="#">Escola Vivian Marçal</a></p>
         </section>
-        <section class="welcome">
-            <h1>BEM VINDO AO <p>SISEVI</p></span></h1>
+        <section id="welcome">
+            <div class="container">
+                <h1>BEM VINDO AO</h1>
+                <h2>SISEVI</h2>
+            </div>
         </section>
-        <section class="login-area">
+        <section id="login-area">
             <form action="">
-                <input class="user-input" type="text" id="username" placeholder="Usuário">
+                <input class="user-input" type="text" id="username" placeholder="Usuário"><br>
                 <input type="password" class="passwors-input" id="user-pass" placeholder="Senha">
                 <div class="buttons">
                     <a href="#" class="forget">Esqueci minha senha</a>
-                    <button>Login</button>
+                    <button>LOGIN</button>
                 </div>
             </form>
-            <h2 id="login">LOGIN</h2>
+            <div class="content">
+                <img src="images/login-text.svg" alt="">
+            </div>
         </section>
     </section>
 </body>
