@@ -7,7 +7,8 @@
     <title>Sisevi - Restrições</title>
 
     <link rel="stylesheet" href="styles/reset.css">
-</head>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/cozinheira-especific.css"></head>
 <body>
     <header id="header">
         <h2><a href="cozinheira-home.html">Escola Vivian Marçal</a></h2>
@@ -15,60 +16,63 @@
     <main id="main">
         <h2 class="title">Restrições especiais - Preparo</h2>
         <section class="restrict-group">
-            <div class="restriction-box checked">
-                <main>
+            <div class="no-border">
+                <div class="restriction-box checked">
                     <h3 class="title">Joãozinho</h3>
-                    <p>Sem lactose</p>
-                    <p>Sem glúten</p>
-                    <p>Sem temperos</p>
-                    <p>Fria</p>
-                    <p>Líquida</p>
-                    <img src="images/icon-return.svg" alt="">
-                </main>
-                <footer>
-                    <p>Sala 5</p>
-                </footer>
+                    <section class="container">
+                        <p class="text">
+                            Sem lactose <br> Sem glúten <br> Sem temperos <br> Fria <br> Líquida
+                        </p>
+                        <div class="button">
+                            <img src="images/icon-return.svg" alt="">
+                        </div>
+                    </section>
+                </div>
+                <p>Sala 5</p>
             </div>
-            <div class="restriction-box">
-                <main>
+
+            <div class="no-border">
+                <div class="restriction-box">
                     <h3 class="title">Zézinho</h3>
-                    <p>Sem lactose</p>
-                    <p>Sem glúten</p>
-                    <p>Fria</p>
-                    <p>Líquida</p>
-                    <img src="images/icon-check.svg" alt="">
-                </main>
-                <footer>
-                    <p>Sala 3</p>
-                </footer>
+                    <section class="container">
+                        <p class="text">
+                            Sem lactose <br> Sem glúten <br> Fria <br> Líquida
+                        </p>
+                        <div class="button">
+                            <img src="images/icon-check.svg" alt="">
+                        </div>
+                    </section>
+                </div>
+                <p>Sala 3</p>
             </div>
-            <div class="restriction-box">
-                <main>
+
+            <div class="no-border">
+                <div class="restriction-box">
                     <h3 class="title">Luizinho</h3>
-                    <p>Sem lactose</p>
-                    <p>Sem glúten</p>
-                    <p>Sem açúcar</p>
-                    <p>Fria</p>
-                    <p>Líquida</p>
-                    <img src="images/icon-check.svg" alt="">
-                </main>
-                <footer>
-                    <p>Sala 9</p>
-                </footer>
+                    <section class="container">
+                        <p class="text">
+                            Sem lactose <br> Sem glúten <br> Fria <br> Líquida <br> Sem açúcar
+                        </p>
+                        <div class="button">
+                            <img src="images/icon-check.svg" alt="">
+                        </div>
+                    </section>
+                </div>
+                <p>Sala 9</p>
             </div>
         </section>
+        <footer id="footer">
+            <section class="buttons">
+                <a href="cozinheira-common.html" class="back-button">
+                    <img src="images/icon-back.svg" alt="">
+                    Voltar
+                </a>
+                <a href="cozinheira-rooms.html" class="next-button">
+                    Continuar
+                    <img src="images/icon-next.svg" alt="">
+                </a>
+            </section>
+        </footer>
     </main>
-    <footer id="footer">
-        <section class="buttons">
-            <a href="cozinheira-common.html" class="back-button">
-                <img src="images/icon-back.svg" alt="">
-                Voltar
-            </a>
-            <a href="cozinheira-rooms.html" class="next-button">
-                Continuar
-                <img src="images/icon-next.svg" alt="">
-            </a>
-        </section>
-    </footer>
 </body>
 </html>

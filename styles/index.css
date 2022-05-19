@@ -123,3 +123,81 @@ button, a, .button{
     width: 21.8rem;
     text-align: center;
 }
+
+/* ==== MEDIA QUERIES ==== */
+/* Extra large devices - UP */
+
+/* Large devices */
+@media (max-width: 767px){    
+    html{
+        height: 100vh;
+    }
+    
+    .grid{
+        grid-template-columns: 100vw;
+        grid-template-rows: 18vh 9vh 73vh;
+        grid-template-areas: 
+        "welcome"
+        "header"
+        "login-area";
+    }
+
+    #welcome{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #welcome h1{
+        font-size: 2rem;
+    }
+
+    #welcome h2{
+        font-size: 6.4rem;
+    }
+
+    #header{
+        display: block;
+        text-align: center;
+    }
+
+    #header a{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    #login-area img{
+        max-width: 6rem;
+        margin-right: 1rem;
+    }
+
+    #login-area form{
+        padding-left: 4rem;
+        min-width: 75vw;
+        padding-right: 1.5rem;
+    }
+
+    #login-area form input{
+        width: 100%;
+        padding-left: .8rem;
+        padding-bottom: .6rem;
+    }
+
+    #login-area form input:nth-child(3){
+        margin-bottom: 1.2rem;
+    }
+
+    #login-area form .buttons {
+        max-width: 100%;
+        display: flex;
+    }
+
+    #login-area form .buttons a{
+        font-size: 1rem;
+        margin-left: .8rem;
+    }
+
+    #login-area form .buttons button{
+        font-size: 1.4rem;
+        padding: .4rem 1.2rem;
+    }
+}

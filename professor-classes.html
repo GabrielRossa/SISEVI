@@ -7,10 +7,12 @@
     <title>Sisevi - Turmas</title>
 
     <link rel="stylesheet" href="styles/reset.css">
-</head>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/professor-classes.css"></head>
 <body>
     <header id="header">
-        <h2><a href="professor-home.html">Escola Vivian Marçal</a></h2>
+        <p><a href="professor-home.html">Escola Vivian Marçal</a></p>
     </header>
     <main id="main">
         <h2 class="title">Selecione a turma que deseja registrar as presenças</h2>
@@ -18,16 +20,22 @@
 
         <section class="classes">
             <a href="" class="class checked">
-                <h3>5º ano</h3>
-                <p>Manhã</p>
+                <div class="container">
+                    <h3>5º ano</h3>
+                    <p>Manhã</p>
+                </div>
             </a>
             <a href="" class="class">
-                <h3>6º ano</h3>
-                <p>Manhã</p>
+                <div class="container">
+                    <h3>6º ano</h3>
+                    <p>Manhã</p>
+                </div>
             </a>
             <a href="" class="class">
-                <h3>6º ano</h3>
-                <p>Tarde</p>
+                <div class="container">
+                    <h3>7º ano</h3>
+                    <p>Manhã</p>
+                </div>
             </a>
         </section>
         <footer id="footer">
@@ -45,77 +53,89 @@
     </main>
 
     <!-- TURMA -->
-    <section class="class-wrapper">
-        <div class="class-slide">
+    <section class="view-class-wrapper open">
+        <div class="slide">
             <header>
                 <h2>6º ano - manhã</h2>
             </header>
             <main>
-                <div class="students">
-                    <div class="student present">
-                        <h2>Arthur Silva</h2>
-                        <button class="button-absent">
-                            Presente
-                            <img src="images/icon-check.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="student present">
-                        <h2>Breno Moreira</h2>
-                        <button class="button-absent">
-                            Presente
-                            <img src="images/icon-check.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="student present">
-                        <h2>Camila Pereira</h2>
-                        <button class="button-absent">
-                            Presente
-                            <img src="images/icon-check.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="student absent">
-                        <h2>Arthur Silva</h2>
-                        <button class="button-present">
-                            Falta
+                <ul class="students">
+                    <li class="student present">
+                        <h3>Arthur Silva</h3>
+                        <div class="buttons">
+                            <button class="button-absent">
+                                Presente
+                                <img src="images/icon-check.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="student present">
+                        <h3>Breno Moreira</h3>
+                        <div class="buttons">
+                            <button class="button-absent">
+                                Presente
+                                <img src="images/icon-check.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="student present">
+                        <h3>Camila Pereira</h3>
+                        <div class="buttons">
+                            <button class="button-absent">
+                                Presente
+                                <img src="images/icon-check.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="student absent">
+                        <h3>Arthur Silva</h3>
+                        <div class="buttons">
+                            <button class="button-present">
+                                Falta
+                                <img src="images/icon-x.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="student">
+                        <h3>Arthur Silva</h3>
+                        <div class="buttons">
+                            <button class="button-present">
+                                Falta
+                                <img src="images/icon-x.svg" alt="">
+                            </button>
+                            <button class="button-absent">
+                                Presente
+                                <img src="images/icon-check.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="student">
+                        <h3>Lorena Alves</h3>
+                        <div class="buttons">
+                            <button class="button-present">
+                                Falta
+                                <img src="images/icon-x.svg" alt="">
+                            </button>
+                            <button class="button-absent">
+                                Presente
+                                <img src="images/icon-check.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <footer>
+                    <div class="buttons">
+                        <div class="button cancel">
+                            Cancelar
                             <img src="images/icon-x.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="student">
-                        <h2>Arthur Silva</h2>
-                        <button class="button-present">
-                            Falta
-                            <img src="images/icon-x.svg" alt="">
-                        </button>
-                        <button class="button-absent">
-                            Presente
+                        </div>
+                        <button class="button concluded">
+                            Concluído
                             <img src="images/icon-check.svg" alt="">
                         </button>
                     </div>
-                    <div class="student">
-                        <h2>Lorena Alves</h2>
-                        <button class="button-present">
-                            Falta
-                            <img src="images/icon-x.svg" alt="">
-                        </button>
-                        <button class="button-absent">
-                            Presente
-                            <img src="images/icon-check.svg" alt="">
-                        </button>
-                    </div>
-                </div>
+                </footer>
             </main>
-            <footer>
-                <div class="buttons">
-                    <div class="button cancel">
-                        Cancelar
-                        <img src="images/icon-x.svg" alt="">
-                    </div>
-                    <button class="button concluded">
-                        Concluído
-                        <img src="images/icon-check.svg" alt="">
-                    </button>
-                </div>
-            </footer>
         </div>
     </section>
 </body>

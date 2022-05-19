@@ -2,3 +2,9 @@ body{
     background: url(/images/background-1.svg) no-repeat bottom left, url(/images/Background-2.svg) no-repeat bottom right;
     background-size: auto;
 }
+
+@media (max-width: 767px){
+    body{
+        background-size: 50% ;
+    }
+}

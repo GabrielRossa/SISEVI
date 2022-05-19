@@ -1,0 +1,71 @@
+main{
+    padding-top: 3.2rem;
+    text-align: center;
+}
+
+main h2{
+    margin-bottom: 3.2rem;
+}
+
+main .restrict-group{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 0 6.4rem;
+}
+
+main .restrict-group .restriction-box{
+    border: solid .2rem var(--color1);
+    border-radius: 0 1.2rem 1.2rem 1.2rem;
+    text-align: left;
+    margin: 3.2rem 3rem;
+    max-width: 25rem;
+}
+
+main .restrict-group .restriction-box h3{
+    padding: 1rem 2rem;
+    margin: 0 2rem 1.5rem 0;
+    background: var(--color1);
+    color: var(--white);
+    border-radius: 0 1.2rem 1.2rem 1.2rem;
+
+    font: 600 2.4rem 'Poppins', sans-serif;
+}
+
+main .restrict-group .restriction-box .container{
+    display: flex;
+    margin: 0 .8rem .8rem 0;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+main .restrict-group .restriction-box p{
+    margin-left: 2rem;
+    font: 600 2rem 'Poppins', sans-serif;
+    margin-bottom: .8rem;
+}
+
+main .restrict-group .restriction-box .button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .restrict-group .restriction-box .button img{
+    height: 2.4rem;
+}
+
+/* BOX CHECKED */
+main .restrict-group .restriction-box.checked{
+    border-color: #666666;
+}
+
+main .restrict-group .restriction-box.checked h3{
+    background: #666666;
+}
+
+main .restrict-group .restriction-box.checked p{
+    color: #666666;
+}

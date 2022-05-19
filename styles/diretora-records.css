@@ -11,7 +11,6 @@ main .items{
 
 main .items .item{
     background: var(--color1);
-    color: var(--white);
     display: flex;
     height: 10rem;
     width: 25.2rem;
@@ -21,6 +20,10 @@ main .items .item{
 
     justify-content: center;
     align-items: center;
+}
+
+main .items .item h3{
+    color: var(--white);
 }
 
 main .items .item:nth-child(4){

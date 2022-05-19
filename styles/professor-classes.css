@@ -1,0 +1,267 @@
+main{
+    padding-top: 3.2rem;
+    text-align: center;
+}
+
+main .subtitle{
+    color: #666666;
+    font: 400 2rem 'Poppins', sans-serif;
+    margin-bottom: 1.6rem;
+}
+
+main .classes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45rem;
+}
+
+main .classes .class{
+    height: 20rem;
+    width: 16rem;
+    background: var(--color1);
+    margin: 3rem;
+    border-radius: .8rem;
+}
+main .classes .class h3, main .classes .class p{
+    color: var(--white);
+    font: 600 2.8rem 'Poppins', sans-serif;
+}
+
+main .classes .class p{
+    font: 600 1.6rem 'Poppins', sans-serif;
+}
+
+main .classes .class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Checked */
+main .classes .class.checked{
+    background: #666666;
+}
+
+/* POP UP VIEW CLASS */
+.view-class-wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    background: #000000cc;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.view-class-wrapper.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.view-class-wrapper .slide{
+    width: 108.8rem;
+    height: 60.2rem;
+    background: var(--white);
+    border-radius: 1.6rem;
+    padding: 3.6rem 5.2rem;
+    margin: auto;
+}
+
+.view-class-wrapper .slide header{
+    display: flex;
+    align-items: center;
+}
+
+.view-class-wrapper .slide main ul{
+    margin: 0 3.6rem;
+    height: 41.5rem;
+} 
+
+.view-class-wrapper .slide main ul .student{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: .4rem;
+    padding: .4rem .8rem;
+    border-radius: .8rem;
+}
+
+.view-class-wrapper .slide main ul .student h3{
+    font: 600 2rem 'Poppins', sans-serif;
+}
+
+.view-class-wrapper .slide main ul .student button{
+    background: none;
+    display: flex;
+    align-items: center;
+
+    font-size: 2rem;
+}
+
+.view-class-wrapper .slide main ul .student button:nth-last-child(1){
+    margin-left: 1.6rem;
+}
+
+.view-class-wrapper .slide main ul .student button img{
+    margin-left: .8rem;
+}
+
+.view-class-wrapper .slide main ul .student.present{
+    background: #99E4AE;
+}
+
+.view-class-wrapper .slide main ul .student.absent{
+    background: #E49999;
+}
+
+.view-class-wrapper .slide main ul .student{
+    background: #eeeeee;
+}
+
+.view-class-wrapper .slide main .buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.view-class-wrapper .slide main .buttons .button{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.view-class-wrapper .slide main .buttons .button:nth-child(2){
+    margin-left: 2.4rem;
+}
+
+.view-class-wrapper .slide main .button img{
+    margin-left: .8rem;
+}
+
+/* ==== MEDIA QUERIES ==== */
+/* Extra large devices - UP */
+
+/* Large devices */
+@media (max-width: 767px){
+    #header{
+        height: 10vh;
+        padding-left: 3rem;
+    }
+
+    #header p{
+       font-size: 1.4rem; 
+    }
+
+    #main{
+        height: 90vh;
+        padding-top: 2rem;
+    }
+
+    main .title{
+        font-size: 1.5rem;
+    }
+
+    main .subtitle{
+        font-size: 1.2rem;
+    }
+
+    main .classes{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 40rem;
+        flex-wrap: wrap;
+    }
+    
+    main .classes .class{
+        height: 7rem;
+        width: 20rem;
+        background: var(--color1);
+        border-radius: .8rem;
+        margin: .5rem;
+    }
+    main .classes .class h3, main .classes .class p{
+        color: var(--white);
+        font: 600 2rem 'Poppins', sans-serif;
+    }
+    
+    main .classes .class p{
+        font: 600 1.2rem 'Poppins', sans-serif;
+    }
+    
+    main #footer .buttons a{
+        font-size: 1.6rem;
+        margin: 2rem;
+    }
+    main #footer .buttons img{
+        height: 1.6rem;
+    }
+
+    main #footer .buttons a:nth-child(1) img{
+        margin-right: 1rem;
+    }
+    main #footer .buttons a:nth-child(2) img{
+        margin-left: 1rem;
+    }
+
+    /* POP UP */    
+    .view-class-wrapper h2{
+        font-size: 2.4rem;
+    }
+    
+    .view-class-wrapper .slide{
+        width: 95vw;
+        height: 95vh;
+        padding: 1.8rem 2.4rem;
+    }
+    
+    .view-class-wrapper .slide main ul{
+        margin-left: .8rem;
+        margin-right: 0;
+        height: 75vh;
+    } 
+    
+    .view-class-wrapper .slide main ul .student{    
+        margin-bottom: .2rem;
+        padding: .2rem .4rem;
+        border-radius: .8rem;
+    }
+    
+    .view-class-wrapper .slide main ul .student h3{
+        font: 600 1.5rem 'Poppins', sans-serif;
+    }
+    
+    .view-class-wrapper .slide main ul .student button{    
+        font-size: 1.5rem;
+    }
+    
+    .view-class-wrapper .slide main ul .student button:nth-last-child(1){
+        margin-left: .8rem;
+    }
+    
+    .view-class-wrapper .slide main ul .student button img{
+        margin-left: .4rem;
+    }
+    
+    .view-class-wrapper .slide main .buttons{
+        justify-content: space-between;
+    }
+
+    .view-class-wrapper .slide main .buttons .button{
+        font-size: 1.2rem;
+    }
+    
+    .view-class-wrapper .slide main .buttons .button:nth-child(2){
+        margin-left: 2.4rem;
+    }
+    
+    .view-class-wrapper .slide main .button img{
+        margin-left: .8rem;
+    }
+}
