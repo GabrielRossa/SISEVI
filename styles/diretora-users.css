@@ -1,0 +1,37 @@
+main{
+    padding: 3.2rem 20rem;
+    display: block;
+    text-align: center;
+}
+
+main .title{
+    margin-bottom: 6rem;
+}
+
+main .items{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5rem;
+}
+
+main .items .item{
+    background: var(--color1);
+    display: flex;
+    height: 10rem;
+    width: 49rem;
+    border-radius: .8rem;
+    margin-bottom: 3.2rem;
+    font: 600 2.8rem 'Poppins', sans-serif;
+
+    justify-content: center;
+    align-items: center;
+}
+
+main .items .item h3{
+    color: var(--white);
+}
+
+main .items .item:nth-child(4){
+    margin: 0;
+}
